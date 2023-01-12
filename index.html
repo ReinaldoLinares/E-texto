@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador/Desencriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); </style>
+        <style> @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap'); </style>
+        <style> @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap'); </style>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="nav">
+                <div>
+                    <img class="logo" src="alurab.jpg" alt="alura">
+                    
+                </div>
+                <h1 class="bienvenidos">Bienvenidos! Encriptador/Desencriptador</h1>
+            </div> 
+                          
+        </header>
+
+        <main>
+            
+                <div class="principal">
+                    <div class="encriptar">
+                        <textarea id="text1" autofocus rows="10" autocorect="on" class="cuadrosTextoE" placeholder="Escribe el mensaje a encriptar o desencriptar"></textarea>
+                        <ul id="condiciones" class="condiciones">
+                            <li>Ingrese solo letras minúsculas</li>
+                            <li>NO usar caracteres especiales</li>
+                            <li>NO usar letras con acento</li>
+                        </ul>
+                        <div id="divBotones">
+                            <button class="boton" onclick="validarE()">Encriptar</button>
+                            <button class="boton" onclick="validarD()">Desencriptar</button>
+                        </div>   
+                    </div>
+                    
+                    <div class="desencriptar">
+                        <textarea id="text2" disabled rows="9" autocorect="on" class="cuadrosTextoD" placeholder="Aquí se verá tu mensaje secreto"></textarea>
+                        <button id="btn" onclick="copiar()">Copiar</button>
+                    </div>
+                    
+                </div>        
+            
+        </main>
+
+
+    </body>
+    
+
+
+</html>
